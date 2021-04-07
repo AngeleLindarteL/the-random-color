@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    transition: .2s;
+}
+#color-sec{
+    max-width: 1700px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+#color-container{
+    border: 2px solid black;
+    margin: auto;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+h1{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+#generator{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(162, 163, 76);
+    transition: .4s;
+}
+
+#generator:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#generator:focus{
+    animation: backdrop .7s forwards;
+}
+
+@keyframes backdrop {
+    0%{transform: scale(1.2);}
+    50%{transform: scale(.8)}
+    100%{transform: scale(1.2)}
+}
